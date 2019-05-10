@@ -183,7 +183,7 @@
 		"description": "Make a use middleware function."
 	},
 
-	"Makwe a node Http request": {
+	"Make a node Http request": {
 		"prefix": "use",
 		"body": [
 			"app.use(function (req, res, next) {",
@@ -233,7 +233,16 @@
 		],
 		"description": "Make a server htp Request using node."
 	},
-	
+
+	"Jest test": {
+		"prefix": "test",
+		"body": [
+			"test('${1:Funtion}(${2:Arguments})',  () => {",
+			"\t$).tobe(${3:Expected return value});",
+			"});",
+		],
+		"description": "Write a jest test function."
+	},
 }
 
 

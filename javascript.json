@@ -171,8 +171,6 @@
 		"description": "Execute code if the return key is pressed."
 	},
 
-
-
 	"Use middleware in Express": {
 		"prefix": "use",
 		"body": [
@@ -237,11 +235,37 @@
 	"Jest test": {
 		"prefix": "test",
 		"body": [
-			"test('${1:Funtion}(${2:Arguments})',  () => {",
-			"\t$).tobe(${3:Expected return value});",
+			"test('${1:TestName}',() => {",
+			"\texpect(${2:TestValue}).tobe(${3:Expected return value});",
 			"});",
 		],
 		"description": "Write a jest test function."
+	},
+
+	"Node module export": {
+		"prefix": "module.exports",
+		"body": [ "module.exports.${1:Module to export}"],
+		"description": "Create a node module export."
+	},
+
+	"Express GET request": {
+		"prefix": "getexpress",
+		"body": [ 
+			"app.get(${1:Route}, (req, res) =>{",
+			"\t${2:Body}",
+			"})"
+		],
+		"description": "Create a new Express GET request."
+	},
+
+	"Express POST request": {
+		"prefix": "postexpress",
+		"body": [ 
+			"app.post(${1:Route}, (req, res) =>{",
+			"\t${2:Body}",
+			"})"
+		],
+		"description": "Create a new Express POST request."
 	},
 }
 

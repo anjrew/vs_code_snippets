@@ -176,7 +176,7 @@
 		"body": [
 			"app.use(function (req, res, next) {",
 			"\t$1",
-			"  });",
+			"});",
 		],
 		"description": "Make a use middleware function."
 	},
@@ -267,6 +267,53 @@
 		],
 		"description": "Create a new Express POST request."
 	},
+
+	"A Javascript Function": {
+		"prefix": "function(){}",
+		"body": [ 
+			"/**",
+			"* @param {string}  p1 - A string param.",
+			"* @param {string=} p2 - An optional param (Closure syntax)",
+			"* @param {string} [p3] - Another optional param (JSDoc syntax).",
+			"* @param {string} [p4=\"test\"] - An optional param with a default value",
+			"* @return {string} This is the result",
+			"*/",
+			"function ${1:name}(${2:arguments}) {",
+			"\t${3:body}",
+			"\treturn${4:returnValue}",
+			"}",
+		],
+		"description": "Create a new Javascript function with JSDoc ."
+	},
+
+	"A Javascript Object constructor": {
+		"prefix": "constructor(){}",
+		"body": [ 
+			"/**",
+ 			"* @constructor",
+ 			"* @param {number} data",
+			"* @param {string}  p1 - A string param.",
+			"* @param {string=} p2 - An optional param (Closure syntax)",
+			"* @param {string} [p3] - Another optional param (JSDoc syntax).",
+			"* @param {string} [p4=\"test\"] - An optional param with a default value",
+			"*/",
+			"constructor (${1:parameters}) {",
+			"\t${2:variable} = ${3:value}",
+			"\t${4:otherExpressions}",
+
+			"\tsuper(${5:Super Constructor Parameters})",
+			"\tif (!this.name && !this.data) {",
+			"\t\tthrow Error('Arguments are missing')",
+			"}"
+		],
+		"description": "Create a new Javascript function with JSDoc ."
+	},
+
+	/**
+ * @constructor
+ * @param {number} data
+ */
+	
 }
 
 

@@ -1,0 +1,122 @@
+{
+	"HTML template": {
+		"prefix": "ahtml",
+		"body": [
+				"<!DOCTYPE html>",
+				"",
+			// "	\"<!--[if gt IE 8]><!--> <html class=\"no-js\"> <!--<![endif]-->",
+				"\t<head>",
+				"\t\t<meta charset=\"utf-8\">",
+				"\t\t<title>$1</title>",
+				"\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+				"\t\t<link rel=\"stylesheet\" href=\"style.css\">",
+				"\t</head>",
+				"\t<body>",
+				"\t\t\t$2",
+				"\t\t<script src=\"script.js\"></script>",
+				"\t</body>",
+				"</html>",
+		],
+		"description": "Creates HTML boiler plate"
+	},
+	
+	"Div class": {
+		"prefix": "dvcl",
+		"body": [
+			"<div class=\"$1\">$2</div>",
+		],
+		"description": "Create a div with a class"
+	},
+
+	"Dv id": {
+		"prefix": "dvid",
+		"body": [
+			"<div id=\"$1\">$2</div>",
+		],
+		"description": "Create a div with an id"
+	},
+
+	"Dv id & class": {
+		"prefix": "dvidcl",
+		"body": [
+			"<div id=\"$1\" class=\"$2\">$3</div>",
+		],
+		"description": "Create a div with an id and class"
+	},
+
+	"Footer id": {
+		"prefix": "ftid",
+		"body": [
+			"<footer id=\"$1\">$2</footer>",
+		],
+		"description": "Create a footer with an id"
+	},
+
+	"Footer class": {
+		"prefix": "ftcl",
+		"body": [
+			"<footer class=\"$1\">$2</footer>",
+		],
+		"description": "Create a footer with a class"
+	},
+
+
+	"Nav with id": {
+		"prefix": "nvid",
+		"body": [
+			"<nav id=\"$1\">$2</nav>"
+		],
+		"description": "Nav with id"
+	},
+
+	"Nav with class": {
+		"prefix": "nvcl",
+		"body": [
+			"<nav class=\"$1\">$2</nav>"
+		],
+		"description": "Nav with class"
+	},
+
+	"Nav with class and id": {
+		"prefix": "nvcl",
+		"body": [
+			"<nav class=\"$1\" id=\"$2\">$3</nav>"
+		],
+		"description": "Nav with class and id"
+	},
+
+	"Data AOS": {
+		"prefix": "dataasos",
+		"body": [
+			"data-asos=\"$1\""
+		],
+		"description": "AOS also applies the default value of attributes to the <body> element on the HTML document. "
+	},
+
+	"A HTML text area": {
+		"prefix": "textarea",
+		"body": [
+			"<textarea>$1</textarea>"
+		],
+		"description": "Add a HTML text area. "
+	},
+
+	
+	"A HTML Button tag": {
+		"prefix": "button",
+		"body": [
+			"<button type=\"button\">$1</button>"
+		],
+		"description": "Add a HTML button. "
+	},
+
+	"A HTML link tag": {
+		"prefix": "a",
+		"body": [
+			"<a href=\"$1\">"
+		],
+		"description": "Add a HTML href. "
+	},
+	
+
+}
